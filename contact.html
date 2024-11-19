@@ -5,13 +5,122 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0074D9;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+            nav a {
+                text-decoration: none;
+                color: #0074D9;
+                margin: 0 1rem;
+            }
+
+                nav a:hover {
+                    text-decoration: underline;
+                }
+
+        h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input, textarea, button {
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #0074D9;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #005bb5;
+            }
+
+        .contact-info {
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+            .contact-info p {
+                margin: 0.5rem 0;
+            }
+    </style>
 </head>
 <body>
-    <h1>Contact Us</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="aboutus.html">About Us</a>
-    </nav>
-    
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+        <h2>We'd Love to Hear From You</h2>
+        <p>If you have any questions, suggestions, or just want to get in touch, feel free to use the form below or reach out to us through the contact details provided.</p>
+        <form action="" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required /> 
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+            <label for="message">Your Message:</label>
+            <textarea id"message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <h3>Our Contact Info</h3>
+            <p>Email: <a href""></a></p>
+            <p>Address: 27500 SW Parkway Ave, Wilsonvile, OR 97070</p>
+        </div>
+    </main>
 </body>
 </html>

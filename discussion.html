@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Discussions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0074D9;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+            nav a {
+                text-decoration: none;
+                color: #0074D9;
+                margin: 0 1rem;
+            }
+
+                nav a:hover {
+                    text-decoration: underline;
+                }
+
+        h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .discussion {
+            margin-top: 2rem;
+        }
+
+            .discussion h3 {
+                margin-bottom: 1rem;
+                color: #0074D9;
+            }
+
+        .discussion-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .discussion-form input, .discussion-form textarea, .discussion-form button {
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        .discussion-form textarea {
+            resize: vertical;
+        }
+
+        .discussion-form button {
+            background-color: #0074D9;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+            .discussion-form button:hover {
+                background-color: #005bb5;
+            }
+
+        .comment-section {
+            margin-top: 2rem;
+        }
+
+        .comment {
+            background: #f9f9f9;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+            .comment h4 {
+                margin: 0;
+                color: #0074D9;
+            }
+
+            .comment p {
+                margin: 0.5rem 0 0;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Movie Discussions</h1>
+    </header>
+    <main>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <section class="discussion">
+            <h2>Discuss Your Favorite Shows and Movies</h2>
+            <p>Share your thoughts about the latest movies and connect with other movie enthusiasts!</p>
+            <form class="discussion-form" action="" method="POST">
+                <label for="username">Your Name:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your name" required />
+
+                <label for="movieorshow">Movie or Show Name:</label>
+                <input type="text" id="movieorshow" name="movieorshow" placeholder="which movie or show are you discussing?" required />
+
+                <label for="comment">Your Comment:</label>
+                <textarea id="comment" name="comment" rows="5" placeholder="Share your thoughts..." required></textarea>
+
+                <button type="submit">Submit Comment</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

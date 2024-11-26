@@ -166,3 +166,19 @@
       font-size: 28px;
     }
   }
+
+.navbuttons, .logo, .signupbutton {
+    text-decoration: none; 
+    color: white; 
+    display: inline-block; 
+}
+
+.navbuttons:visited, .logo:visited, .signupbutton:visited {
+    color: white;
+}
+
+
+.navbuttons:hover, .logo:hover, .signupbutton:hover {
+    opacity: 0.8; 
+    cursor: pointer; 
+}

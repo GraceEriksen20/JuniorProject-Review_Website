@@ -182,3 +182,89 @@
     opacity: 0.8; 
     cursor: pointer; 
 }
+
+
+
+
+form {
+    background-color: #24495E; /* Subtle background color */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+    /* Labels */
+    form label {
+        font-weight: bold;
+        color: #FFD700; /* Gold color for labels */
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+
+    /* Input Fields */
+    form input, form textarea {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1rem;
+        border: 1px solid #316B83; /* Border matching the theme */
+        border-radius: 6px;
+        background-color: #1E2A38; /* Dark background for inputs */
+        color: #FFFFFF; /* Light text color for readability */
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        /* Input Focus */
+        form input:focus, form textarea:focus {
+            border-color: #FFD700; /* Highlight border on focus */
+            box-shadow: 0 0 5px rgba(255, 215, 0, 0.7); /* Gold glow on focus */
+            outline: none;
+        }
+
+    /* Textarea Styling */
+    form textarea {
+        height: 120px; /* Default height for the text area */
+        resize: vertical; /* Allow vertical resizing */
+    }
+
+    /* Submit Button */
+    form button {
+        background-color: #316B83; /* Button color matching the theme */
+        color: #FFFFFF;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 0.8rem 1.2rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+        /* Button Hover and Active State */
+        form button:hover {
+            background-color: #FFD700; /* Gold color on hover */
+            color: #1E2A38; /* Contrast text color */
+            transform: scale(1.05); /* Slight zoom effect */
+        }
+
+        form button:active {
+            background-color: #FFA500; /* Slightly darker gold on active */
+            transform: scale(0.98); /* Pressed effect */
+        }
+
+    /* Form Validation Feedback */
+    form .error {
+        color: #FF6B6B; /* Red color for error messages */
+        font-size: 0.9rem;
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+    }
+
+    form .success {
+        color: #32CD32; /* Green color for success messages */
+        font-size: 0.9rem;
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+    }

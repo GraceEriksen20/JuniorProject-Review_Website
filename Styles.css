@@ -184,8 +184,7 @@
 }
 
 
-
-
+/*Style for the form in disscussion and contact us page*/
 form {
     background-color: #24495E; /* Subtle background color */
     padding: 2rem;
@@ -267,4 +266,34 @@ form {
         font-size: 0.9rem;
         margin-top: -1rem;
         margin-bottom: 1rem;
+    }
+
+
+    /*The Style for the Stars rating*/
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+    .rating input {
+        display: none;
+    }
+
+    .rating label {
+        width: 40px; /* Adjust the size of the star */
+        height: 40px;
+        background: url('./images/empty_Star.jpg') no-repeat center center;
+        background-size: contain;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+    .rating input:checked ~ label {
+        background: url('./images/full_Star.jpg') no-repeat center center;
+        background-size: contain;
+    }
+
+    .rating input:hover ~ label {
+        transform: scale(1.2); /* Optional zoom effect */
     }

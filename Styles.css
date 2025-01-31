@@ -38,6 +38,45 @@
     position: fixed;
     inset: 0% 0% auto;
   }
+
+  .PopularMovies {
+    padding-top: 100px;
+    align-items: center;
+  }
+
+
+  .movie-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 50px; 
+    padding: 20px; 
+    max-width: 1200px;
+    margin: auto;
+}
+
+.movie-card {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+    font-size: larger;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.movie-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
   
   .body {
     background-color: var(--bodybackgroundcolor);

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover - Not a Critic</title>
+    <title>Not a Critic - Social Movie Reviews</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="body">
@@ -20,9 +20,15 @@
             <a href="aboutus.html" class="navbuttons w-button">About Us</a>
         </section>
     </section>
-    <section class="herowrapper">
-        <h1 class="heading">Discover New Movies and TV Shows</h1>
-        <p class="paragraph">Explore curated lists and recommendations.</p>
-    </section>
+
+    <section class="PopularMovies">
+        <section class="MovieSearch">
+            <input type="text" id="searchInput" placeholder="Search for a movie...">
+            <button id="searchBtn">Search</button>
+        </section>
+        <h1 class="PopularMoviesTitle">Popular Movies</h1>
+        <div id="movies" class="movie-container"></div>
+
+        <script src="PopularMovies.js"></script>
+     </section>
 </body>
-</html>

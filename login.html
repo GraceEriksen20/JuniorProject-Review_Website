@@ -1,37 +1,41 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not a Critic - Social Movie Reviews</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Not a Critic - Login Page/Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="loginStyles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
 </head>
 
+<body>
 
-<body class="body">
-    <h1>Login</h1>
-    <div class="input-box">
-        <input type="text" placeholder="Username"
-        required>
-        <i class='bx bxs-user'></i>
+    <div class="wrapper">
+        <div class="form-wrapper sign-in">
+            <form action="">
+                <h1>Not a Critic</h1>
+                <h2>Login</h2>
+                <div class="input-group">
+                    <input type="text" required>
+                    <label for="">Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" required>
+                    <label for="">Password</label>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox">Remember me</label>
+                </div>
+                <button type="submit">Login</button>
+                <div class="signUp-link">
+                    <p>Don't have an account? <a href="#" class="signUpBtn-link">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
     </div>
-    <div class="input-box">
-        <input type="password" placeholder="Password" required>
-        <i class='bx bxs-lock-alt' ></i>
-    </div>
-
-    <div class="remember-forgot">
-        <label><input type="checkbox"> Remember me
-        </label>
-        <a href="#">Forgot password</a>
-    </div>
-
-    <button type="submit" class="btn">Login</button>
-
-    <div class="register=link">
-        <p>Don't have an account? <a href="#">Register</a>
-        </p>
-    </div>
+    <script src="script.js"></script>
 </body>
+
+</html>

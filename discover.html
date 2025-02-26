@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not a Critic - Social Movie Reviews</title>
-    <link rel="stylesheet" href="css/discover.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Not a Critic - Social Movie Reviews</title>
+  <link rel="stylesheet" href="css/discover.css">
+  <!-- Font Awesome for the magnifying glass icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="body">
-    <section class="navbar">
-        <a href="index.html" class="logo w-button">NotACritic</a>
-        <section class="navbarbuttons">
-            <a href="index.html" class="navbuttons w-button">Home</a>
-            <a href="discover.html" class="navbuttons w-button">Discover</a>
-            <a href="friends.html" class="navbuttons w-button">Friends</a>
-            <a href="reviews.html" class="navbuttons w-button">Reviews</a>
-            <a href="profile.html" class="navbuttons w-button">Profile</a>
-            <a href="discussion.html" class="navbuttons w-button">Discussion</a>
-            <a href="contact.html" class="navbuttons w-button">Contact</a>
-            <a href="aboutus.html" class="navbuttons w-button">About Us</a>
-        </section>
+  <section class="navbar">
+    <a href="index.html" class="logo w-button">NotACritic</a>
+    <section class="navbarbuttons">
+      <a href="index.html" class="navbuttons w-button">Home</a>
+      <a href="discover.html" class="navbuttons w-button">Discover</a>
+      <a href="friends.html" class="navbuttons w-button">Friends</a>
+      <a href="reviews.html" class="navbuttons w-button">Reviews</a>
+      <a href="profile.html" class="navbuttons w-button">Profile</a>
+      <a href="discussion.html" class="navbuttons w-button">Discussion</a>
+      <a href="contact.html" class="navbuttons w-button">Contact</a>
+      <a href="aboutus.html" class="navbuttons w-button">About Us</a>
     </section>
+  </section>
 
-    <section class="PopularMovies">
-        <section class="MovieSearch">
-            <input type="text" id="searchInput" placeholder="Search for a movie...">
-            <button id="searchBtn">Search</button>
-        </section>
-        <h1 class="PopularMoviesTitle">Popular Movies</h1>
-        <div id="movies" class="movie-container"></div>
+  <section class="PopularMovies">
+    <section class="MovieSearch">
+      <input type="text" id="searchInput" placeholder="Search for a movie...">
+      <button id="searchBtn">
+        <i class="fas fa-search"></i>
+      </button>
+    </section>
+    <h1 id="moviesTitle">Popular Movies</h1>
+    <div id="movies" class="movie-container"></div>
+  </section>
 
-        <script src="PopularMovies.js"></script>
-     </section>
+  <script src="PopularMovies.js"></script>
 </body>
+</html>

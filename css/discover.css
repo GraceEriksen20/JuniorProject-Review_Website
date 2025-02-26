@@ -76,7 +76,8 @@ body {
 h1 {
     font-size: 35px;
     color: #0ef;
-    margin: 10px 0;
+    margin: 20px 0px 40px 0px;
+    text-align: center;
 }
 
 h2 {

@@ -127,3 +127,27 @@ button:hover {
     box-shadow: 0 0 20px #0ef;
     transform: scale(1.1);
 }
+
+.moviecards {
+    display: flex;
+    flex-direction: row;
+    /* Ensures that the cards are laid out in a row */
+    flex-wrap: wrap;
+    /* Allows items to wrap onto the next line if space runs out */
+    justify-content: space-around;
+    /* Evenly distributes space around items */
+    align-items: flex-start;
+    /* Aligns items at the start of the container */
+    gap: 20px;
+    /* Creates space between each card */
+}
+
+.cardwrapper,
+.section,
+.section-2,
+.section-3 {
+    flex: 1 1 200px;
+    /* Allows flex items to grow and shrink but not smaller than 200px */
+    margin: 10px;
+    /* Adds space around each card */
+}

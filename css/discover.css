@@ -127,3 +127,78 @@ button:hover {
     box-shadow: 0 0 20px #0ef;
     transform: scale(1.1);
 }
+
+.movie-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    /* This creates space between the images */
+}
+
+.movie-container img {
+    width: 250px;
+    /* Adjusts the size of the images */
+    height: auto;
+    transition: transform 0.3s ease;
+    /* Optional: adds a smooth transform effect on hover */
+}
+
+.movie-container img:hover {
+    transform: scale(1.1);
+    /* Optional: makes the images slightly larger when hovered */
+}
+
+#searchInput,
+#searchBtn {
+    height: 50px;
+    /* Increase height for better clickability and visual balance */
+    border-radius: 25px;
+    /* Fully rounded ends */
+    border: none;
+    /* Remove default border */
+    padding: 0 20px;
+    /* Add padding inside the elements */
+    font-size: 18px;
+    /* Increase font size for readability */
+    outline: none;
+    /* Remove the outline on focus */
+    justify-content: center;
+}
+
+#searchInput {
+    width: 60%;
+    /* Adjust width as needed */
+    background: #022c43;
+    /* Darker shade for the input field */
+    color: white;
+    /* Light color for the text */
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 80px;
+}
+
+#searchBtn {
+    width: 20%;
+    /* Adjust width as needed */
+    background: #04c2c9;
+    /* Light, bright color for the button */
+    color: black;
+    /* Dark text on the light button */
+    cursor: pointer;
+    /* Indicates the button is clickable */
+    transition: background 0.3s ease;
+    /* Smooth transition for hover effect */
+    justify-content: center;
+    margin-left: 10px;
+}
+
+#searchBtn:hover {
+    background: #039faf;
+    /* Darker shade of the button color on hover */
+}
+
+.PopularMoviesTitle{
+    margin-left: 20px;
+}

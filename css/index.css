@@ -151,3 +151,23 @@ button:hover {
     margin: 10px;
     /* Adds space around each card */
 }
+
+.signupbutton {
+    display: inline-block;
+    background: #0ef;
+    color: black;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #0ef;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.signupbutton:hover {
+    box-shadow: 0 0 20px #0ef;
+    transform: scale(1.1);
+}

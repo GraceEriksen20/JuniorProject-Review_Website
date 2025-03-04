@@ -127,3 +127,25 @@ button:hover {
     box-shadow: 0 0 20px #0ef;
     transform: scale(1.1);
 }
+
+.movie-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    /* This creates space between the images */
+}
+
+.movie-container img {
+    width: 250px;
+    /* Adjusts the size of the images */
+    height: auto;
+    transition: transform 0.3s ease;
+    /* Optional: adds a smooth transform effect on hover */
+}
+
+.movie-container img:hover {
+    transform: scale(1.1);
+    /* Optional: makes the images slightly larger when hovered */
+}

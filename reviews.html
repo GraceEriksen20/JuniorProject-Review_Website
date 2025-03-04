@@ -50,19 +50,42 @@
         <p class="paragraph">Reviews you and others have shared.</p>
     </section>
 
-    <!-- Movie Search Bar -->
     <section class="MovieSearch">
-        <input type="text" id="searchInput" placeholder="Search for a movie...">
-        <button id="searchBtn">
-            <i class="fas fa-search"></i>
-        </button>
-    </section>
+    <input type="text" id="searchInput" placeholder="Search for a movie...">
+    <button id="searchBtn">Search</button>
+</section>
 
-    <!-- Display Selected Movie for Review -->
-    <h1 id="selectedMovieTitle">Select a movie to review</h1>
+<!-- Display Selected Movie for Review -->
+<h1 id="moviesTitle">Select a movie to review</h1>
 
-    <!-- Movie Results Container -->
-    <section id="movies" class="movie-container"></section>
+<section id="movies" class="movie-container"></section>
+
+<script src="searchMovies.js"></script>
+
+<section id="reviewForm" style="display: none;">
+    <h3>Write Your Review</h3>
+    <textarea id="reviewText" placeholder="Write your review here..." rows="4"></textarea>
+    
+    <div class="rating">
+        <label>Rating:</label>
+        <select id="reviewRating">
+            <option value="5">⭐ 5 Stars</option>
+            <option value="4">⭐ 4 Stars</option>
+            <option value="3">⭐ 3 Stars</option>
+            <option value="2">⭐ 2 Stars</option>
+            <option value="1">⭐ 1 Star</option>
+        </select>
+    </div>
+    
+    <button id="submitReview">Submit Review</button>
+</section>
+
+<section id="reviewsContainer">
+    <h3>Reviews</h3>
+    <ul id="reviewsList"></ul>
+</section>
+
+<h2 id="selectedMovieTitle">Select a movie to review</h2>
 
 </body>
 </html>

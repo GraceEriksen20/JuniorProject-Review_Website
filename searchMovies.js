@@ -2,7 +2,6 @@ const API_KEY = '6a2863399991ca1db02fee37d29257d6';
 const BASE_URL = 'https://api.themoviedb.org/3';
 const IMAGE_URL = 'https://image.tmdb.org/t/p/w500';
 
-// Ensure search elements exist before adding event listeners
 const searchInput = document.getElementById('searchInput');
 const searchBtn = document.getElementById('searchBtn');
 
@@ -14,7 +13,6 @@ if (searchInput && searchBtn) {
     }
   });
 
-  // Enable search via the Enter key
   searchInput.addEventListener('keydown', (event) => {
     if (event.key === "Enter") {
       searchBtn.click();
@@ -22,7 +20,6 @@ if (searchInput && searchBtn) {
   });
 }
 
-// Function to fetch movies based on search query
 async function searchMovies(query) {
   const response = await fetch(`${BASE_URL}/search/movie?api_key=${API_KEY}&query=${query}`);
   const data = await response.json();
@@ -33,7 +30,6 @@ async function searchMovies(query) {
   displayMovies(data.results);
 }
 
-// Function to display search results
 function displayMovies(movies) {
     const movieContainer = document.getElementById('movies'); 
     movieContainer.innerHTML = ''; 

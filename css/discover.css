@@ -148,7 +148,7 @@ button:hover {
 }
 
 .movie-container img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     /* Optional: makes the images slightly larger when hovered */
 }
 

@@ -149,3 +149,42 @@ button:hover {
     transform: scale(1.1);
     /* Optional: makes the images slightly larger when hovered */
 }
+
+.MovieSearch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    /* Adds spacing between input and button */
+    width: 100%;
+}
+
+.MovieSearch input {
+    width: 300px;
+    /* Adjust width as needed */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.MovieSearch button {
+    width: 200px;
+    /* Adjust width as needed */
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 30px;
+    background-color: #0ef;
+    color: #000;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 10px #0ef;
+    transition: 0.3s;
+}
+
+.MovieSearch button:hover {
+    box-shadow: 0 0 20px #0ef;
+    transform: scale(1.1);
+}

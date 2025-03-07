@@ -143,6 +143,7 @@ button:hover {
     height: auto;
     transition: transform 0.3s ease;
     /* Optional: adds a smooth transform effect on hover */
+    gap: 30px;
 }
 
 .movie-container img:hover {
@@ -158,6 +159,7 @@ button:hover {
     gap: 15px;
     /* Adds spacing between input and button */
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .MovieSearch input {
@@ -188,3 +190,4 @@ button:hover {
     box-shadow: 0 0 20px #0ef;
     transform: scale(1.1);
 }
+

@@ -74,9 +74,9 @@ body {
 }
 
 h1 {
-    font-size: 35px;
+    font-size: 40px;
     color: #0ef;
-    margin: 20px 0px 40px 0px;
+    margin: 60px 0px 40px 0px;
     text-align: center;
 }
 
@@ -134,12 +134,13 @@ button:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
+    margin: 40px;
     /* This creates space between the images */
 }
 
 .movie-container img {
-    width: 250px;
+    width: 300px;
     /* Adjusts the size of the images */
     height: auto;
     transition: transform 0.3s ease;

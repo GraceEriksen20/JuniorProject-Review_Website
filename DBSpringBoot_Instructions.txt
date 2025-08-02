@@ -1,0 +1,17 @@
+Need to use Java JDK 17 and set to JAVA_HOME path
+SQL Server needs a login/password, once you make one, in backend/src/main/resources/application.properties adjust the following lines to match:
+
+	spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=NotACritic;encrypt=false;trustServerCertificate=true
+	spring.datasource.username=notacriticlocal
+	spring.datasource.password=1234
+
+
+
+Instructions for Database Testing:
+To initialize:
+	-Need to have SQL Server up and on port 1433
+	-in backend directory
+	-In terminal: ./mvnw clean install
+	-In terminal: ./mvnw spring-boot:run
+	-In browser: localhost:8080/	(api/users, api/reviews, etc.)
+

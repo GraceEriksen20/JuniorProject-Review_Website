@@ -1,14 +1,14 @@
 USE master;
 GO
 
-IF  DB_ID('NotACritic') IS NOT NULL
+IF  DB_ID('NotACriticDB') IS NOT NULL
     DROP DATABASE NotACritic;
 GO
 
 CREATE DATABASE NotACritic;
 GO
 
-USE NotACritic;
+USE NotACriticDB;
 
 CREATE TABLE Users (
   UserID			INT				PRIMARY KEY		IDENTITY,
